@@ -1,7 +1,12 @@
+import StreemVideoProvider from "@/providers/StreemClientProvider";
 import React, { ReactNode } from "react";
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
-  return <main>{children}</main>;
+  return (
+    <main>
+      <StreemVideoProvider>{children}</StreemVideoProvider>
+    </main>
+  );
 };
 
 export default RootLayout;
